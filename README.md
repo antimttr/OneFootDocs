@@ -1,7 +1,8 @@
 ## Welcome to One Foot Out The Door Documentation
 [React Docs](https://antimttr.github.io/OneFootDocs/react/)
 ### Links to project
-[OneFoot Website](https://onefoot-4913e.firebaseapp.com/)<br>
+[OneFoot Website (React)](https://onefoot-4913e.firebaseapp.com/)<br>
+[OneFoot Website (Native)](https://onefootnative.firebaseapp.com/)<br>
 [OneFoot GitHub](https://github.com/antimttr/OneFoot)
 ### Markdown
 
