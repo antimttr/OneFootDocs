@@ -3,6 +3,7 @@
 ### Links to project
 [OneFoot Website (React)](https://onefoot-4913e.firebaseapp.com/)<br>
 [OneFoot Website (Native)](https://onefootnative.firebaseapp.com/)<br>
+[OneFoot Website (Angular)](https://onefootangular.firebaseapp.com/)<br>
 [OneFoot GitHub](https://github.com/antimttr/OneFoot)
 ### Markdown
 
