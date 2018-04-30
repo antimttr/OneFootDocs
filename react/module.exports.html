@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: HelloWorld</title>
+    <title>JSDoc: Class: exports</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: HelloWorld</h1>
+    <h1 class="page-title">Class: exports</h1>
 
     
 
@@ -28,9 +28,11 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>HelloWorld<span class="signature">()</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>exports<span class="signature">(props)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description">HelloWorld creates custom tag peter-test with # of times printed and color tags</div>
+            <div class="class-description">This component renders a text depending on dynamic input taken
+from the user. The user can select how many times a text
+renders and its color.</div>
         
     
 </header>
@@ -45,19 +47,73 @@
     
 
     
-    <h4 class="name" id="HelloWorld"><span class="type-signature"></span>new HelloWorld<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="exports"><span class="type-signature"></span>new exports<span class="signature">(props)</span><span class="type-signature"></span></h4>
     
 
     
 
 
 
+<div class="description">
+    Constructs the components. State will keep track
+of how many times the text will render and the color
+</div>
 
 
 
 
 
 
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -93,7 +149,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="HelloWorld.js.html">HelloWorld.js</a>, <a href="HelloWorld.js.html#line9">line 9</a>
+        <a href="PeterComponent.js.html">PeterComponent.js</a>, <a href="PeterComponent.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -137,32 +193,18 @@
     
 
     
-
-    
-        <h3 class="subsection-title">Methods</h3>
+        <h3 class="subsection-title">Members</h3>
 
         
             
+<h4 class="name" id="handleColorChange"><span class="type-signature"></span>handleColorChange<span class="type-signature"></span></h4>
 
-    
-
-    
-    <h4 class="name" id="render"><span class="type-signature"></span>render<span class="signature">()</span><span class="type-signature"> &rarr; {*}</span></h4>
-    
-
-    
 
 
 
 <div class="description">
-    Renders the custom tag
+    If the input color changes, propagates the info to the state
 </div>
-
-
-
-
-
-
 
 
 
@@ -199,7 +241,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="HelloWorld.js.html">HelloWorld.js</a>, <a href="HelloWorld.js.html#line14">line 14</a>
+        <a href="PeterComponent.js.html">PeterComponent.js</a>, <a href="PeterComponent.js.html#line38">line 38</a>
     </li></ul></dd>
     
 
@@ -215,41 +257,9 @@
 
 
 
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
         
-<div class="param-desc">
-    PSX
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">*</span>
-
-
-    </dd>
-</dl>
-
     
 
-
-
-
-
-        
     
 
     
