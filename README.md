@@ -3,7 +3,7 @@
 ### Links to project
 [Peterbook Website](https://peterbook-cd4cf.firebaseapp.com/login)<br>
 [Trello Board](https://trello.com/b/P3cUg76h/candorville)<br>
-[Slite Documentation](https://onefootoutthedoor.slite.com/app/filters/all/notes/n3tUp3X~BH)
+[Slite Documentation](https://onefootoutthedoor.slite.com/app/filters/all/notes/n3tUp3X~BH)<br>
 [OneFoot Test GitHub](https://github.com/antimttr/OneFoot)
 ### Markdown
 
