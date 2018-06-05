@@ -89,7 +89,7 @@
 					<div class="tsd-signature tsd-kind-icon">app<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;functions.config().setting.appname</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1f12b25/backend/functions/src/services/common/mailService.ts#L9">services/common/mailService.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/4b586a8/backend/functions/src/services/common/mailService.ts#L9">services/common/mailService.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -99,7 +99,7 @@
 					<div class="tsd-signature tsd-kind-icon">gmail<wbr>Email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;functions.config().gmail.email</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1f12b25/backend/functions/src/services/common/mailService.ts#L8">services/common/mailService.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/4b586a8/backend/functions/src/services/common/mailService.ts#L8">services/common/mailService.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -109,7 +109,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Create<wbr>Feedback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Runnable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DocumentSnapshot</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">TriggerAnnotated</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;functions.firestore.document(&#x60;feeds/{feedId}&#x60;).onCreate((snapshot, context) &#x3D;&gt; {return new Promise&lt;void&gt;((resolve, reject) &#x3D;&gt; {const feed: Feed &#x3D;  snapshot.data().data // event.data.data()const from &#x3D; &#x60;${appName} Feedback &lt;${gmailEmail}&gt;&#x60;const to &#x3D; &#x27;m5west@gmail.com&#x27;const subject &#x3D; &#x60;${feed.feedType} -${feed.user!.email} - ${snapshot.createTime}&#x60; // event.data.createTimeconst text &#x3D; &#x60;Feedback type: ${feed.feedType}Feedback ID: ${feed.id}User Email: ${feed.user!.email}User Fullname: ${feed.user!.fullName}User ID: ${feed.user!.userId}Feedback: ${feed.text}&#x60;/*** Send email*/emailAPI.sendEmail(new Email(from,to,subject,text)).then(() &#x3D;&gt; {resolve()}).catch((error) &#x3D;&gt; {reject()})})})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1f12b25/backend/functions/src/services/common/mailService.ts#L11">services/common/mailService.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/4b586a8/backend/functions/src/services/common/mailService.ts#L11">services/common/mailService.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
