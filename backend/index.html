@@ -64,43 +64,23 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="firestore-social-backend-built-for-react-social-network">firestore-social-backend built for <a href="https://github.com/Qolzam/react-social-network">react-social-network</a></h1>
+				<p>Welcome to TeamOneFootOutTheDoor&#39;s backend GitHub for CandorVille. If you were looking for the main GitHub, go <a href="https://github.com/antimttr/OneFoot">here</a>.</p>
+				<p>In this README, you can find useful information on the things that you can do in terms of commands in the backend. For all intents and purposes, we will assume that you are in the <code>backend/functions</code> directory when you are inputting these commands.</p>
 				<h2 id="getting-started">Getting Started</h2>
-				<p>I recommend read <a href="https://firebase.google.com/docs/functions/get-started">firbase instruction</a> first, then continue installation.</p>
-				<h3 id="prerequisites">Prerequisites</h3>
-				<p> Install <a href="https://nodejs.org/en/">NodeJs</a></p>
-				<h4 id="note">Note</h4>
-				<ul>
-					<li>If you&#39;re using Windows you should install all node-gyp dependencies with following commands:</li>
-				</ul>
-				<p><code>$ npm install --global --production windows-build-tools</code>
-				and then install the package</p>
-				<p><code>$ npm install --global node-gyp</code></p>
-				<h3 id="installing">Installing</h3>
-				<h4 id="install-back-end-server-serverless">Install back-end server/serverless</h4>
-				<ol>
-					<li>Fork the <a href="https://github.com/Qolzam/firestore-social-backend">firestore-social-backend</a> repository on Github</li>
-					<li>Clone your fork to your local machine <pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> git@github.com:&lt;yourname&gt;/firestore-social-backend.git
-</code></pre>
-					</li>
-					<li>Go to the project root directory <pre><code class="lang-bash"><span class="hljs-built_in">cd</span> firestore-social-backend
-</code></pre>
-					</li>
-					<li>Installing all nodejs modules:<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> <span class="hljs-built_in">functions</span> &amp;&amp; npm install
-</code></pre>
-					</li>
-					<li>Configure firebase:<ul>
-							<li>In command line of [react-social-network] root project, type <a href="https://firebase.google.com/docs/cli/">firebase login</a>. This command connects your local machine to your Firebase account and grants access to your projects. To test that authentication worked, you can run firebase list to see a list of all of your Firebase projects. The list should be the same as the projects listed at <a href="https://console.firebase.google.com">Firebase console</a>.</li>
-							<li>Be sure the name of firebase project for [react-social-network] and this project is same. You also need to check <code>.firebaserc</code> if you set correct project name in <code>default</code> field of <code>projects</code> field.</li>
-						</ul>
-					</li>
-					<li>Set the <code>gmail.email</code> and <code>gmail.password</code> Google Cloud environment variables to match the email and password of the Gmail account used to send emails (or <a href="https://support.google.com/accounts/answer/185833?hl=en">the app password</a> if your account has 2-step verification enabled). The <code>recaptcha.secretKey</code> key is using for recaptcha secret key in SMS verification. The <code>phone.sourceNumber</code>, <code>plivo.authId</code> and <code>plivo.authToken</code> are configuration from <a href="https://www.plivo.com/">Plivo SMS Service</a> in SMS verification .For this use:<pre><code class="lang-bash">firebase <span class="hljs-built_in">functions</span>:config:<span class="hljs-built_in">set</span> gmail.email=<span class="hljs-string">"myusername@gmail.com"</span> gmail.password=<span class="hljs-string">"secretpassword"</span> recaptcha.secretkey=<span class="hljs-string">"secretKey"</span> phone.sourcenumber=<span class="hljs-string">"sourceNumber"</span> plivo.authid=<span class="hljs-string">"authId"</span> plivo.authtoken=<span class="hljs-string">"authToken"</span> setting.appname=<span class="hljs-string">"App Name"</span>
-</code></pre>
-					</li>
-					<li>Deploy ;)<pre><code class="lang-bash">npm start
-</code></pre>
-					</li>
-				</ol>
+				<p>Make sure that you&#39;ve successfully completed the <code>Getting Started</code> section back from our <a href="https://github.com/antimttr/OneFoot">main GitHub</a>.</p>
+				<h2 id="linter">Linter</h2>
+				<p>Taken from <a href="https://slite.com/api/s/DSLDpEeBzeBFP4F56wyAe9/Linting">here</a>.</p>
+				<p>It is recommended that you run the Lint tests locally so that you can make sure that your code will be passing for the CI in terms of Lint.</p>
+				<p>Run the following commands:</p>
+				<pre><code>npm <span class="hljs-keyword">run</span><span class="bash"> tslint
+</span>npm <span class="hljs-keyword">run</span><span class="bash"> elint:summary</span>
+</code></pre><p>This will start TSLint and ESLint respectively on the frontend. You will have passed all the Lint tests if you are brought up to another command-line prompt and no errors were listed.</p>
+				<h2 id="auto-documentation">Auto Documentation</h2>
+				<p>Taken from <a href="https://slite.com/api/s/UMExJ3UJMDBCK7VtA3D3Dw/Auto%20Documenting%20%5BNEEDS%20REVIEW%5D">here</a>.</p>
+				<p>Like with the Linter, it is recommended that you run this part locally to make sure that it will cause no errors during the CI.</p>
+				<p>Run the following commands:</p>
+				<pre><code>npm <span class="hljs-keyword">run</span><span class="bash"> docs</span>
+</code></pre><p>If all goes well, it should produce a new folder called <code>adocs</code> in the <code>backend/functions</code> directory. Do not push <code>adocs</code> to GitHub. CI should handle that automatically if set up properly.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
