@@ -95,7 +95,7 @@
 					<div class="tsd-signature tsd-kind-icon">app<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Express</span><span class="tsd-signature-symbol"> =&nbsp;express()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/a6fb341/backend/functions/src/services/users/userService.ts#L14">services/users/userService.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/dd7da52/backend/functions/src/services/users/userService.ts#L14">services/users/userService.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -105,7 +105,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Update<wbr>User<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Runnable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Change</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DocumentSnapshot</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">TriggerAnnotated</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;functions.firestore.document(&#x27;userInfo/{userId}&#x27;).onUpdate((change, context) &#x3D;&gt; {return new Promise&lt;void&gt;((resolve, reject) &#x3D;&gt; {const userId: string &#x3D; context.params.userIdconst previousUserInfo: Profile &#x3D; change.before.data().data // event.data.previous.data()const userInfo: Profile &#x3D;  change.after.data().data // event.data.data()if (previousUserInfo.avatar &#x3D;&#x3D;&#x3D; userInfo.avatar &amp;&amp; previousUserInfo.fullName &#x3D;&#x3D;&#x3D; userInfo.fullName) {resolve()} else {const postsRef &#x3D; firestoreDB.collection(&#x27;posts&#x27;).where(&#x27;ownerUserId&#x27;, &#x27;&#x3D;&#x3D;&#x27;, userId)const commentsRef &#x3D; firestoreDB.collection(&#x27;comments&#x27;).where(&#x27;userId&#x27;, &#x27;&#x3D;&#x3D;&#x27;, userId)const leftUserTieRef &#x3D; firestoreDB.collection(&#x27;graphs:users&#x27;).where(&#x27;leftNode&#x27;, &#x27;&#x3D;&#x3D;&#x27;, userId)const rightUserTieRef &#x3D; firestoreDB.collection(&#x27;graphs:users&#x27;).where(&#x27;rightNode&#x27;, &#x27;&#x3D;&#x3D;&#x27;, userId)// Get a new write batchvar batch &#x3D; firestoreDB.batch()postsRef.get().then((posts) &#x3D;&gt; {commentsRef.get().then((comments) &#x3D;&gt; {leftUserTieRef.get().then((leftTies) &#x3D;&gt; {rightUserTieRef.get().then((rightTies) &#x3D;&gt; {// Set update batch for postsposts.forEach((post) &#x3D;&gt; {const updatedPost: Post &#x3D; post.data()updatedPost.ownerAvatar &#x3D; userInfo.avatarupdatedPost.ownerDisplayName &#x3D; userInfo.fullNamebatch.update(post.ref, updatedPost)})// Set update batch for commentscomments.forEach((comment) &#x3D;&gt; {const updatedComment &#x3D; comment.data() as CommentupdatedComment.userDisplayName &#x3D; userInfo.avatarupdatedComment.userDisplayName &#x3D; userInfo.fullNamebatch.update(comment.ref, updatedComment)})// Set update batch for leftTiesleftTies.forEach((leftTie) &#x3D;&gt; {const updatedGraph &#x3D; leftTie.data() as Graphconst updatedLeftTie &#x3D; updatedGraph.LeftMetadata as UserTieupdatedLeftTie.avatar &#x3D; userInfo.avatarupdatedLeftTie.fullName &#x3D; userInfo.fullNameupdatedGraph.LeftMetadata &#x3D; updatedLeftTiebatch.update(leftTie.ref, updatedGraph)})// Set update batch for rightTiesrightTies.forEach((rightTie) &#x3D;&gt; {const updatedGraph &#x3D; rightTie.data() as Graphconst updatedRightTie &#x3D; updatedGraph.rightMetadata as UserTieupdatedRightTie.avatar &#x3D; userInfo.avatarupdatedRightTie.fullName &#x3D; userInfo.fullNameupdatedGraph.rightMetadata &#x3D; updatedRightTiebatch.update(rightTie.ref, updatedGraph)})batch.commit().then(() &#x3D;&gt; {resolve()}).catch(reject)})})})})}})})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/a6fb341/backend/functions/src/services/users/userService.ts#L73">services/users/userService.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/dd7da52/backend/functions/src/services/users/userService.ts#L73">services/users/userService.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -120,7 +120,7 @@
 					<div class="tsd-signature tsd-kind-icon">users<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TriggerAnnotated</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;functions.https.onRequest(app)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/a6fb341/backend/functions/src/services/users/userService.ts#L68">services/users/userService.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/dd7da52/backend/functions/src/services/users/userService.ts#L68">services/users/userService.ts:68</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -142,7 +142,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/a6fb341/backend/functions/src/services/users/userService.ts#L21">services/users/userService.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/dd7da52/backend/functions/src/services/users/userService.ts#L21">services/users/userService.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
