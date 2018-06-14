@@ -102,7 +102,7 @@
 					<div class="tsd-signature tsd-kind-icon">app<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Express</span><span class="tsd-signature-symbol"> =&nbsp;express()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/d264709/backend/functions/src/services/authorize/authorizeService.ts#L78">services/authorize/authorizeService.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1b38f87/backend/functions/src/services/authorize/authorizeService.ts#L78">services/authorize/authorizeService.ts:78</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -112,7 +112,7 @@
 					<div class="tsd-signature tsd-kind-icon">app<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;functions.config().setting.appname</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/d264709/backend/functions/src/services/authorize/authorizeService.ts#L20">services/authorize/authorizeService.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1b38f87/backend/functions/src/services/authorize/authorizeService.ts#L20">services/authorize/authorizeService.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -122,7 +122,7 @@
 					<div class="tsd-signature tsd-kind-icon">auth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TriggerAnnotated</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;functions.https.onRequest(app)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/d264709/backend/functions/src/services/authorize/authorizeService.ts#L282">services/authorize/authorizeService.ts:282</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1b38f87/backend/functions/src/services/authorize/authorizeService.ts#L282">services/authorize/authorizeService.ts:282</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -137,7 +137,7 @@
 					<div class="tsd-signature tsd-kind-icon">bcrypt<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;bcrypt&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/d264709/backend/functions/src/services/authorize/authorizeService.ts#L17">services/authorize/authorizeService.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1b38f87/backend/functions/src/services/authorize/authorizeService.ts#L17">services/authorize/authorizeService.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -147,7 +147,7 @@
 					<div class="tsd-signature tsd-kind-icon">cookie<wbr>Parser<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;cookie-parser&#x27;)()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/d264709/backend/functions/src/services/authorize/authorizeService.ts#L16">services/authorize/authorizeService.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1b38f87/backend/functions/src/services/authorize/authorizeService.ts#L16">services/authorize/authorizeService.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -157,7 +157,7 @@
 					<div class="tsd-signature tsd-kind-icon">cors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;cors&#x27;)({ origin: true })</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/d264709/backend/functions/src/services/authorize/authorizeService.ts#L79">services/authorize/authorizeService.ts:79</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1b38f87/backend/functions/src/services/authorize/authorizeService.ts#L79">services/authorize/authorizeService.ts:79</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -167,7 +167,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>User<wbr>Create<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Runnable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UserRecord</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">TriggerAnnotated</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;functions.auth.user().onCreate((event) &#x3D;&gt; {return new Promise&lt;void&gt;((resolve, reject) &#x3D;&gt; {const userid &#x3D; event.uidconst followingCircle &#x3D; new Circle()followingCircle.creationDate &#x3D; moment().unix()followingCircle.name &#x3D; &#x60;Following&#x60;followingCircle.ownerId &#x3D; useridfollowingCircle.isSystem &#x3D; truereturn firestoreDB.collection(&#x60;users&#x60;).doc(userid).collection(&#x60;circles&#x60;).add({ ...followingCircle }).then((result) &#x3D;&gt; {resolve()}).catch(reject)})})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/d264709/backend/functions/src/services/authorize/authorizeService.ts#L25">services/authorize/authorizeService.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1b38f87/backend/functions/src/services/authorize/authorizeService.ts#L25">services/authorize/authorizeService.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -182,7 +182,7 @@
 					<div class="tsd-signature tsd-kind-icon">plivo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;plivo&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/d264709/backend/functions/src/services/authorize/authorizeService.ts#L14">services/authorize/authorizeService.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1b38f87/backend/functions/src/services/authorize/authorizeService.ts#L14">services/authorize/authorizeService.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +192,7 @@
 					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;request&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/d264709/backend/functions/src/services/authorize/authorizeService.ts#L15">services/authorize/authorizeService.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1b38f87/backend/functions/src/services/authorize/authorizeService.ts#L15">services/authorize/authorizeService.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,7 +202,7 @@
 					<div class="tsd-signature tsd-kind-icon">salt<wbr>Rounds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">10</span><span class="tsd-signature-symbol"> =&nbsp;10</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/d264709/backend/functions/src/services/authorize/authorizeService.ts#L18">services/authorize/authorizeService.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1b38f87/backend/functions/src/services/authorize/authorizeService.ts#L18">services/authorize/authorizeService.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -219,7 +219,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/d264709/backend/functions/src/services/authorize/authorizeService.ts#L45">services/authorize/authorizeService.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/antimttr/OneFoot/blob/1b38f87/backend/functions/src/services/authorize/authorizeService.ts#L45">services/authorize/authorizeService.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
